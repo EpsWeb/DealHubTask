@@ -1,4 +1,8 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
+
+export enum LogLevel {
+  Info, Warn, Error, Verbose
+}
 
 @Component({
   selector: 'app-root',
@@ -6,5 +10,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'testtest';
+  logLevel = LogLevel;
+  obj: any;
+
 }

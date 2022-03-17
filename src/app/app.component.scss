@@ -1,0 +1,39 @@
+.root {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__wrapper {
+    height: 100vh;
+    width: 50vw;
+
+    &__row1 {
+      width: 50%;
+      display: inline-flex;
+      flex-direction: column;
+
+      .block {
+        height: 33vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid black;
+      }
+    }
+
+    &__row2 {
+      width: 50%;
+      display: inline-block;
+
+      &.block {
+        height: 33vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid black;
+      }
+    }
+  }
+}
